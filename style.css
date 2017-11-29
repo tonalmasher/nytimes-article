@@ -1,0 +1,542 @@
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+}
+
+.site-container {
+  position: relative;
+  margin: 0 75px;
+  border-left: 1px solid rgba(0,0,0,0.2);
+  border-right: 1px solid rgba(0,0,0,0.2);
+  box-shadow: -1px -1px 2px 2px rgba(100,100,100,0.1);
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.row * {
+  vertical-align: middle;
+}
+
+/*
+  ====================================
+  Site Nav
+  ====================================
+*/
+
+.site-nav,
+.more-articles { 
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 6px;
+  text-align: center;
+  z-index: 1;
+  background-color: white;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.site-nav {
+  margin: 0 77px;
+  z-index: 1;
+}
+
+.more-articles {
+  margin: 53px 77px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.more-articles * {
+  vertical-align: top;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.nav-button * {
+  vertical-align: top;
+}
+
+.nytimes-logo {
+  display: inline;
+  margin-left: -123px;
+}
+
+.main-logo {
+  height: 36px;
+  width: auto;
+}
+
+.nav-button {
+  margin: 0 4px;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav-button a {
+  padding-left: 2px;
+}
+
+.icon {
+  height: 18px;
+  width: auto;
+}
+
+.nav-button:hover,
+#menu:hover {
+  background-color: rgb(245,245,245);
+}
+
+#menu {
+  position: relative;
+  left: -20px;
+  background-color: white;
+  border: 1px solid lightgrey;
+}
+
+.login {
+  font-size: 10px;
+  color: white;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  text-transform: uppercase;
+  background-color: #6288A5;
+  border: 1px solid #4D7B9F;
+  border-radius: 3px;
+  padding: 8px 8px;
+}
+
+.login:hover {
+  background-color: #326891;
+}
+
+/*
+  ====================================
+  Main Article Styling
+  ====================================
+*/
+
+.main-container {
+  position: relative;
+  padding-top: 140px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1125px;
+}
+
+article {
+  position: relative;
+  left: 60px;
+  width: 50%;
+  padding-bottom: 20px;
+}
+
+article p {
+  font-size: 19px;
+  line-height: 1.8rem;
+}
+
+.citation {
+  font-size: 12px;
+  color: darkgrey;
+  line-height: 1.2rem;
+}
+
+.story-footer-links a {
+  color: gray;
+  text-decoration: none;
+}
+/*
+  ====================================
+  Article Header Styling
+  ====================================
+*/
+
+.article-header h5 {
+  border-top: 1px solid black;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+.article-header h1 {
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 10px;
+}
+
+#author-and-social {
+  margin-bottom: 10px;
+}
+
+#author-and-social * {
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+#author-and-social img {
+  float: right;
+  padding-left: 10px;
+  box-sizing: border-box;
+  height: 24px;
+  width: auto;
+}
+
+#bookmark {
+  margin: 0 10px;
+  border-left: 1px solid lightgray;
+}
+
+#author-and-social span {
+  text-transform: uppercase;
+  padding-left: 2px;
+}
+
+/*
+  ====================================
+  Article Image Container
+  ====================================
+*/
+
+.main-image-div,
+.main-image {  
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  width: 60%;
+}
+
+figcaption small {
+  opacity: 0.6;
+}
+
+/*
+  ====================================
+  Article Preview Styling
+  ====================================
+*/
+
+.article-preview {
+  display: inline-block;
+  margin: 0;
+  padding: 5px 5px;
+  width: 240px;
+  height: 75px;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+.article-preview img {
+  float: left;
+  margin-right: 5px;
+  height: 65px;
+  width: 65px;
+}
+
+.article-preview p {  
+  font-size: 12px;
+  text-align: left;
+  white-space: normal;
+}
+
+/*
+  ====================================
+  Infographic Styling
+  ====================================
+*/
+
+.infographic-div {
+  position: relative;
+  width: 240%;
+  max-width: 945px;
+  height: 600px;
+  left: -100px;
+  margin-bottom: 80px;
+  background: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png") no-repeat 0 80px;
+  background-size: contain;
+
+}
+
+.infographic-div p, attr {
+  font-size: 14px;
+  line-height: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.infographic-div img {
+  position: relative;
+  width: 945px;
+  height: auto;
+  z-index: 0;
+}
+
+.infographic-text {
+  float: left;
+  width: 25%;
+  margin-top: 124px;
+  padding: 0 10px 0 0;
+  box-sizing: border-box;
+}
+
+.infographic-text p {
+font-weight: 100;  
+}
+
+attr {
+  color: gray;
+}
+
+/*
+  ====================================
+  Comments Preview Styling
+  ====================================
+*/
+
+.comments-div {
+  position: absolute;
+  right: -60px;
+  width: 400px;
+  margin: 100px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.comments-div h4 {
+  display: inline-block;
+  margin: 0 10px;
+  color: #6288A5;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.comments-div h3 {
+  font-size: 14px;
+  line-height: 0;
+}
+
+.comments-div img {
+  display: inline-block;
+  margin: 0;
+}
+
+.date {
+  font-weight: 100;
+  color: gray;
+}
+
+.comments-div p {
+  font-size: 14px;
+  color: rgb(125,125,125);
+}
+
+.comment {
+  padding-bottom: 5px;
+}
+
+/*
+  ====================================
+  Related and Trending
+  ====================================
+*/
+
+.related-articles-div {
+  float: left;
+  width: 64%;
+}
+
+.trending-articles-div {
+  float: right;
+  width: 32%;
+}
+
+.related-articles-div,
+.trending-articles-div {
+  border-top: 1px solid gray;
+  margin: 0;
+  padding: 0 5px;
+}
+
+header h3,
+header h5 {
+  margin-top: 5px;
+}
+
+.link-to-section {
+  color: #326891;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.link-to-section:hover,
+.story-link:hover {
+  text-decoration: underline;
+}
+
+.related-article {
+  float: left;
+  height: 208px;
+  width: 210px;
+  margin-right: 4%;
+  box-sizing: border-box;
+}
+
+.related-article p {
+  margin: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.trending-links {
+  position: relative;
+  margin: 0;
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(100,100,100,0.2);
+}
+
+.trending-links * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.trending-links h1 {
+  margin: 0;
+  font-size: 24px;
+  width: 40px;
+}
+
+.story-link {
+  font-size: 14px;
+  width: 72%;
+  padding-right: 10px;
+  color: #326891;
+  text-decoration: none;
+}
+
+.trending-links img {
+  height: 36px;
+  width: auto;
+}
+
+/*
+  ====================================
+  NY Times Site Links Div 
+  ====================================
+*/
+
+#logo-break {
+  border-top: 4px double #eee;
+  padding-top: 10px;
+}
+
+#logo-break img {
+  height: 32px;
+  width: auto;
+}
+
+.links-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+  padding: 0 20px;
+}
+
+.link-col {
+  font-family: "nyt-franklin",arial,helvetica,sans-serif;
+}
+
+.link-col:last-child {
+  padding-left: 20px;
+  border-left: 1px solid #eee;
+}
+
+.link-col h3 {
+  font-size: 16px;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.times-link {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.8rem;
+}
+
+.times-link:hover,
+.times-link-small:hover {
+  text-decoration: underline;
+}
+
+.times-link-bold {  
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.link-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.times-link-small {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.2rem;
+}
+
+.link-div {
+  margin: 10px 0;
+  padding-bottom: 10px;
+}
+
+.link-div {
+  border-bottom: 1px solid #eee;
+}
+
+.link-div:last-child {
+  border-bottom: none;
+}
+
+
+/*
+  ====================================
+  Footer Div 
+  ====================================
+*/
+
+.bottom-nav { 
+  list-style-type: none; 
+  color: gray;
+  font-size: 12px;
+  margin: 0;
+  padding: 10px 0 30px 0;
+  border-top: 1px solid #eee;
+}
+
+.bottom-link {
+  padding: 0 5px;
+  border-right: 1px solid gray;
+}
+
+.bottom-link:last-child,
+.bottom-link:first-child {
+  border-right: none;
+}
